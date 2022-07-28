@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>交互输入的表单</title>
+</head>
+<body>
+<form style="background-color: #03C2EC;">
+    账号：<label for="username"></label><input type="text" name="username" id="username" placeholder="请输入账号">
+    <br>
+    密码：<label for="password"></label><input type="password" name="password" id="password" placeholder="请输入密码">
+</form>
+<form>
+    <input type="button" value="登录" id="login">
+</form>
+<form>
+    <input type="button" value="注册" id="register"><br>
+    <label>
+        <input type="radio" name="sex" value="male">
+    </label>男<br>
+    <label>
+        <input type="radio" name="sex" value="female">
+    </label>女<br>
+</form>
+<form>
+    <label>
+        <input type="checkbox" name="vehicle" value="Bike">
+    </label>自行车<br>
+    <label>
+        <input type="checkbox" name="vehicle" value="Car">
+    </label>小汽车<br>
+</form>
+<form>
+  <label>Name:
+    <input name="submitted-name" autocomplete="name">
+  </label>
+  <button>Save</button>
+</form>
+
+<!-- 以下表单使用 POST 请求发送数据到当前的 URL。 -->
+<form method="post">
+  <label>Name:
+    <input name="submitted-name" autocomplete="name">
+  </label>
+  <button>Save</button>
+</form>
+
+<!-- 表单使用 fieldset, legend, 和 label 标签 -->
+<form method="post">
+  <fieldset>
+    <legend>Title</legend>
+    <label><input type="radio" name="radio"> Select me</label>
+  </fieldset>
+</form>
+
+</body>
+</html>
