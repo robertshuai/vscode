@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录注册</title>
+</head>
+<body>
+<h1>注册</h1>
+<!--
+action: 可以为静态网页
+method: post get提交方式
+ get提交可以
+-->
+<form action="4.头部.html" method="post">
+<!--  文本输入框
+placeholder: 提示信息
+非空判断
+
+-->
+    <p>账号：<input type="text" name="username"  placeholder="请输入账号" required></p>
+    <p>密码:<input type="text" name="password" ></p>
+    <p>
+        <input type="submit">
+        <input type="reset">
+    </p>
+    <p>下拉框
+        <select name="下拉框的名" id="">
+            <option value="a">中国</option>
+            <option value="b">日本</option>
+
+        </select>
+
+    </p>
+    <p>
+        自定义邮箱：
+        <input type="text" pattern="">
+    </p>
+</form>
+
+</body>
+</html>
